@@ -7,19 +7,19 @@ This is a Spring Boot application notebook-entry with features to add, delete ,r
   - List all notes.
 
 # Scope
-1. Find All Similar words
+**1. Find All Similar words**
   - The endpoint `fetch-all-similar-words` fetches all the similar words in a note saved in h2-database and sends the list to the calling application.
  
-2. Find frequence of word.
+**2. Find frequence of word.**
   - The endpoint `fetch-word-frequency` gives the count of the requested word in the note saved in h2-database.
     
-3. Save the note
+**3. Save the note**
   - A post endpoint is exposed to add an entry of note in the h2-database.
     
-4. Delete the note.
+**4. Delete the note.**
   - A delete enpoint is exposed with the id of note in the request parameters to delete the note from h2-database.
     
-5. List all notes.
+**5. List all notes.**
   - A list of entries of all notes is retrieved from the h2-database to send to calling application (lab-notebook-app)
     
 # Features
