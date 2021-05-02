@@ -42,6 +42,7 @@ This is a Spring Boot application notebook-entry with features to add, delete ,r
 - JUNIT test cases for to add, delete and retrieve note.
 - Implementation of modification service.
 - Implementation of API Gateway and service discovery.
+- Swagger implementation
 
 
 
