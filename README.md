@@ -8,7 +8,7 @@ This is a Spring Boot application notebook-entry with features to add, delete ,r
 
 # Scope
 1. Find All Similar words
-    The endpoint `fetch-all-similar-words` fetches all the similar words in a note saved in h2-database and sends the list to the calling application.
+  The endpoint `fetch-all-similar-words` fetches all the similar words in a note saved in h2-database and sends the list to the calling application.
  
 2. Find frequence of word.
     The endpoint `fetch-word-frequency` gives the count of the requested word in the note saved in h2-database.
