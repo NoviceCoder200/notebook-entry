@@ -29,6 +29,12 @@ This is a Spring Boot application notebook-entry with features to add, delete ,r
 - Logging around controller using Spring AOP.
 - Loosely coupled application as Word related services are implemented in WordController,WordServiceImpl and Managing notes in NoteController.
 
+# Deployment
+
+- maven clean install
+- Run the application
+
+
 # Future Scope
 
 - JWT token based implementation for Security of application.
@@ -39,6 +45,5 @@ This is a Spring Boot application notebook-entry with features to add, delete ,r
 
 
 
-   
-
+  
 
