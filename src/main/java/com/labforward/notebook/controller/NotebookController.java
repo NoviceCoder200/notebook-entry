@@ -36,6 +36,15 @@ public class NotebookController {
 	private NotebookService notebookService;
 
 
+	/**
+	 * 
+	 * This endpoint adds an entry of note in the data.
+	 * 
+	 * @param correlationId
+	 * @param entryDto
+	 * @return
+	 * @throws ServiceException
+	 */
 	@PostMapping("/")
 	public ResponseEntity<String> addEntry(@RequestHeader("correlationId") String correlationId,
 			@RequestBody EntryDto entryDto) throws ServiceException {
@@ -54,6 +63,15 @@ public class NotebookController {
 	}
 	
 
+	/**
+	 * 
+	 * This endpoint deletes an entry of a note from database.
+	 * 
+	 * @param correlationId
+	 * @param id
+	 * @return
+	 * @throws ServiceException
+	 */
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Boolean> removeEntry(@RequestHeader("correlationId") String correlationId,
 			@PathVariable("id") Integer id) throws ServiceException {
@@ -71,6 +89,12 @@ public class NotebookController {
 		}
 	}
 	
+	/**
+	 * This endpoint retrieves all the entries of notes from the database.
+	 * 
+	 * @return
+	 * @throws ServiceException
+	 */
 	@GetMapping("/fetch-all-entries")
 	public ResponseEntity<List<EntryDto>> fetchAllEntries() throws ServiceException {
 		List<EntryDto> entries=notebookService.fetchAllEntries();

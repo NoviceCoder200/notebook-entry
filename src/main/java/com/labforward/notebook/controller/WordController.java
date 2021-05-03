@@ -30,6 +30,14 @@ public class WordController {
 	@Autowired
 	private WordService wordService;
 	
+	/**
+	 * 
+	 * 
+	 * @param correlationId
+	 * @param id
+	 * @param word
+	 * @return
+	 */
 	@GetMapping("/fetch-all-similar-words")
 	public ResponseEntity<List<String>> findAllSimilarWords(@RequestHeader("correlationId") String correlationId,
 			@RequestParam String id, @RequestParam String word)  {
